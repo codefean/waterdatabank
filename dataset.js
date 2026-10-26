@@ -29,7 +29,7 @@ async function start() {
       ${row.cleanup_notes?`<details class="import-notes"><summary>Catalogue preparation notes</summary><p class="prose">${esc(row.cleanup_notes)}</p><p>Original catalogue row: ${esc(row.source_row)}</p></details>`:''}
     </div><aside aria-label="Dataset specifications"><h2>At a glance</h2><dl class="specifications">
       ${[['Topic',row.topic],['Variable',row.variable],['Unit',row.unit],['Data format',row.data_format],['Grid type / CRS',row.grid_type],['Spatial range',row.spatial_range],['Spatial resolution',row.spatial_resolution],['Temporal range',row.temporal_range],['Temporal resolution',row.temporal_resolution],['Actively developed',row.actively_developed]].map(([label,value])=>field(label,value)).join('')}
-    </dl></aside></div><p class="catalogue-note">Catalogue metadata may be incomplete or dated. Source links can point to a provider, paper or data portal; check the provider for access and reuse terms.</p>`;
+    </dl></aside></div><p class="catalogue-note">Catalogue metadata may be incomplete. Source links can point to a provider, paper or data portal.</p>`;
   main.querySelector('#record-download').addEventListener('click',()=>downloadCSV([row],row.id+'.csv'));
 }
 start().catch(error=>{document.querySelector('main').innerHTML=errorView(error);});
