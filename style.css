@@ -1,5 +1,5 @@
-/* SERES palette and generic fonts */
-:root { --sans:Arial,Helvetica,sans-serif; --serif:Georgia,'Times New Roman',serif; --mono:monospace; --ink:#20384f; --muted:#627487; --paper:#f4f8fc; --line:#d2dde8; --accent:#e0eaf4; }
+/* SERES palette and generic fonts. No external fonts or dependencies. */
+:root { --sans:Arial,Helvetica,sans-serif; --serif:Georgia,'Times New Roman',serif; --mono:Aptos,Arial,Helvetica,sans-serif; --ink:#20384f; --muted:#627487; --paper:#f4f8fc; --line:#d2dde8; --accent:#e0eaf4; }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.6 var(--sans); }
 a { color:inherit; text-underline-offset:4px; }
