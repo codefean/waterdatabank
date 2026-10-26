@@ -1,4 +1,4 @@
-/* ## SERES palette and generic fonts. No external fonts or dependencies. */
+/* SERES palette and generic fonts */
 :root { --sans:Arial,Helvetica,sans-serif; --serif:Georgia,'Times New Roman',serif; --mono:monospace; --ink:#20384f; --muted:#627487; --paper:#f4f8fc; --line:#d2dde8; --accent:#e0eaf4; }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.6 var(--sans); }
@@ -18,7 +18,7 @@ nav a { font-size:13px; padding:8px 0; text-decoration:none; }
 nav a[aria-current] { border-bottom:1px solid var(--ink); }
 main { min-height:75vh; padding-bottom:70px; }
 h1,h2,p { margin-top:0; }
-h1 { font-size:clamp(42px,5.6vw,78px); font-weight:400; letter-spacing:-3px; line-height:1.06; margin-bottom:20px; margin-top:-20px; }
+h1 { font-size:clamp(42px,5.6vw,78px); font-weight:400; letter-spacing:-3px; line-height:1.06; margin-bottom:20px; margin-top:10px; }
 h2 { font-size:28px; font-weight:400; line-height:1.25; letter-spacing:-.7px; }
 .page-head { padding:65px 0 38px; }
 .eyebrow { font:10px/1.8 var(--mono); letter-spacing:1px; margin-bottom:20px; }
